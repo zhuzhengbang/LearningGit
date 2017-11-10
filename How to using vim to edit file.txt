@@ -1,0 +1,7 @@
+1. using vi + filename to create file and enter into edit mode
+2. press "i" to enter into edit mode, and press ESC to enter into command mode
+3. press ":" and: 
+   q :to exit edit but if content is modified, it will alert error
+   q!: exit forcely without save the change
+   x:save and exit
+   
