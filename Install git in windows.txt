@@ -1,0 +1,2 @@
+msysgit is windows version git, download from: 
+https://git-for-windows.github.io
