@@ -7,6 +7,6 @@
   git remote add origin git@github.com:youraccount/yourrepository
 5.push files to github
   git push orign master
-6.clone data from github
+6.clone data from github, then you can modify in you local folder and then update to github
   git clone link
  	
