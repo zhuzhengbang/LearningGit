@@ -9,4 +9,10 @@
   git push orign master
 6.clone data from github, then you can modify in you local folder and then update to github
   git clone link
- 	
+  
+7.Check the remote repository
+  git remote -v
+8.one local folder link to two remote repository
+  git remote add github git@github.com:youraccount/yourrepository
+  git remote add gitee git@github.com:youraccount/yourrepository
+  orign is the default name, if want to use different remote,we can use other name
