@@ -1,0 +1,12 @@
+1.generate SSH key using git bash
+  ssh-kengen -t rsa -C "your email address"
+2.upload you id_rsa.pub key to github
+  create new github account first, then in the setting area,find SSH AND GPG KYES, click New SSH key and paster id_rsp.pub content into it.
+3.create repository in github
+4.in local bash cmd, using git remote to link them
+  git remote add origin git@github.com:youraccount/yourrepository
+5.push files to github
+  git push orign master
+6.clone data from github
+  git clone link
+ 	
