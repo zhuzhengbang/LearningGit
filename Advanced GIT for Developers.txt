@@ -1,0 +1,8 @@
+1.Check git directory
+  cd .git/
+2.Split screen to two
+  tmux used in linux, not in windows; in windows, we always use ConEmu
+3.Check status every 2 or other seconds
+  watch only use in linux
+4.git bisect start
+5.Sub Modules
