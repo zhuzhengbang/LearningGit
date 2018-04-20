@@ -1,0 +1,20 @@
+作者：知乎用户
+链接：https://www.zhihu.com/question/20917976/answer/32876441
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+在学习和使用python的过程中，少不了要与Python IDLE打交道。但使用 Python IDLE 都会遇到一个常见而又懊恼的问题——要怎么清屏? 
+答案是为IDLE增加一个清屏的扩展ClearWindow就可以了（在Issue 6143: IDLE中可以看到这个扩展的说明）。 
+下面我说说安装使用的方法。 
+1、下载clearwindow.py（右击-目标另存为，格式为py结尾，直接点击会打开脚本内容）。
+2、拷贝clearwindow.py文件，放在Python安装目录Python XXX\Lib\idlelib下面（XXX为你的python版本）。
+3、记事本打开Python XXX\Lib\idlelib目录下的config-extensions.def（IDLE扩展的配置文件）， 为防止出错，你可以在打开它之前先copy一个备份 。
+4、修改config-extensions.def ，在末尾添加如下内容，然后保存退出：
+[ClearWindow]
+enable=1
+enable_editor=0
+enable_shell=1
+[ClearWindow_cfgBindings]
+clear-window=<Control-Key-;>
+5、打开Python的IDLE，options选项中就可以看到增加了Clear shell window  ctrl+;。
+6、在IDLE输入代码，然后按Ctrl+;（是指Ctrl和;），发现刚输入代码可以被清除了。说明：     快捷键Ctrl+;,可修改成其他键，将“clear-window=<Control-Key-;>”里的Control和;修改成其他键即可。     经试验，Control换成Alter时，会启动不了IDLE，换成Shift时，快捷键不起作用，因为Shift+l，直接变成输入L了。

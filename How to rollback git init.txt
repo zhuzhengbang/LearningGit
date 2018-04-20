@@ -1,0 +1,4 @@
+https://stackoverflow.com/questions/3212459/is-there-a-command-to-undo-git-init
+
+using below command:
+rm -rf .git
